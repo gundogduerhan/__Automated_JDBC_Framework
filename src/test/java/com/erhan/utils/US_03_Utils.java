@@ -18,13 +18,9 @@ public class US_03_Utils {
 	private static Statement st;
 	private static ResultSet rs;
 
-	// The main reason for this class is to ensure
-	// that we don't repeat ourselves in every test/query
-
-	// Therefore, we will get the connected, process data,
-	// and terminate the connect using the same class methods
 
 	// Connect to the DB
+	
 	public static void getConnection() {
 
 		US_02_ConfigsReader.readProperties(US_01_Constants.CONFIGURATION_FILEPATH);
@@ -39,6 +35,7 @@ public class US_03_Utils {
 	}
 
 	// Get data
+	
 	public static List<Map<String, String>> storeDataFromDB(String sqlQuery) {
 		List<Map<String, String>> listOfMaps = new ArrayList<>();
 
@@ -73,6 +70,7 @@ public class US_03_Utils {
 	}
 
 	// Close the connection
+	
 	public static void closeConnection() {
 		try {
 			if (rs != null) {
