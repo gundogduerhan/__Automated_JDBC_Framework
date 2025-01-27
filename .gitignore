@@ -1,0 +1,76 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore dependency directories
+node_modules/
+vendor/
+*.log
+
+# Ignore build files
+dist/
+build/
+out/
+
+# Ignore system-generated files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore Java artifacts
+*.class
+*.war
+*.jar
+
+# Ignore compiled C/C++ files
+*.o
+*.out
+*.a
+*.so
+
+# Ignore images or specific generated files
+*.lock
+*.log
+
+# Ignore coverage reports
+coverage/
+*.coverage
+
+# Ignore database files
+*.db
+
+# Ignore macOS specific files
+.AppleDouble
+.LSOverride
+
+# Ignore package manager lock files (optional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Uncomment and modify below for additional languages/tools:
+# Ignore Ruby specific files
+#.bundle/
+#Gemfile.lock
+
+# Ignore Go specific files
+#bin/
+/target/
